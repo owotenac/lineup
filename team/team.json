@@ -1,0 +1,92 @@
+{ 
+    "Players":[
+            {
+                "Name":"Evan",
+                "Position": "Gardien"
+            },
+            {
+                "Name":"Lucas",
+                "Position": "Gardien"
+            },
+            {
+                "Name":"Leandre",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Victor 1",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Victor 2",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Ilan",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Nico",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Anatole",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Alexis",
+                "Position": "Defense"
+            },
+            {
+                "Name":"Rayan 1",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Ethan",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Noham",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Imad",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Ylan",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Justin",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Kenzo",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Camil",
+                "Position": "Milieu"
+            },
+            {
+                "Name":"Giani",
+                "Position": "Attaque"
+            },
+            {
+                "Name":"Rayan 2",
+                "Position": "Attaque"
+            },
+            {
+                "Name":"Yassine",
+                "Position": "Attaque"
+            },
+            {
+                "Name":"Dorian",
+                "Position": "Attaque"
+            },
+            {
+                "Name":"Nolan",
+                "Position": "Attaque"
+            }
+        ]
+}
