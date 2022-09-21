@@ -1,4 +1,5 @@
 const express = require("express");
+const ejs = require("ejs");
 const { read } = require("fs");
 const app = express();
 const  _readPlayers = require("./players.js");
@@ -10,10 +11,11 @@ app.listen(3001, () => {
 });
 
 // serve your css as static
+app.set("view engine", "ejs");
 app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/main.html");
+  res.render(__dirname + "/views/main.ejs");
 });
 
 app.post('/READ', async (req, res)  => {
