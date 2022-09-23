@@ -18,6 +18,18 @@ app.get("/", (req, res) => {
   res.render(__dirname + "/views/main.ejs");
 });
 
+app.get("/READ", async (req, res) => {
+  var players = await _readPlayers();
+
+  var out = addPlayersinView(players);
+
+  //res.render(out);
+  res.send(out);
+
+  res.status(200)
+})
+
+
 app.post('/READ', async (req, res)  => {
     //readP()
     var players = await _readPlayers();
