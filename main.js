@@ -1,6 +1,6 @@
 //dragElement(document.getElementById("dyn_div"));
 
-const pElement = document.getElementsByClassName("player");
+var pElement = document.getElementsByClassName("player");
 for (let i=0; i < pElement.length ; i++) {
   dragElement(pElement[i]);
 }
@@ -61,8 +61,69 @@ function dragElement(elmnt) {
   }
 
   function closeDragElement() {
+
     /* stop moving when mouse button is released:*/
     document.onmouseup = null;
     document.onmousemove = null;
+
+    if (elmnt) {
+      let xhr = new XMLHttpRequest();
+      //drop the px in the request
+      var request = "playerID=" + elmnt.id + "&x=" + elmnt.style.left.replace('px','') + "&y=" + elmnt.style.top.replace('px','')
+      xhr.open("GET", "/moveplayer?" + request);
+      xhr.send();
+    }
+
   }
+}
+
+function saveTeam()
+{
+  var dialog = document.getElementById("saveDialog");
+  dialog.style.display = "block";
+}
+
+function saveWithName()
+{
+  var fileName = document.getElementById("teamName").value;
+  if (!fileName) {
+    return
+  }
+
+  var dialog = document.getElementById("saveDialog");
+  dialog.style.display = "none";
+
+  let xhr = new XMLHttpRequest();
+  var request = "fileName=" + fileName
+  xhr.open("GET", "/SAVE?" + request);
+  xhr.send();
+}
+
+
+function loadTeam()
+{
+  var dialog = document.getElementById("loadDialog");
+  dialog.style.display = "block";
+}
+
+function loadComposition()
+{
+  var fileName = document.getElementById("compoListInput").value;
+  if (!fileName) {
+    return
+  }
+  var dialog = document.getElementById("loadDialog");
+  dialog.style.display = "none";
+
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // Typical action to be performed when the document is ready:
+      document.close()
+      document.write( xhr.responseText) ;
+   }
+  }
+  var request = "fileName=" + fileName
+  xhr.open("GET", "/LOAD?" + request);
+  xhr.send();
 }

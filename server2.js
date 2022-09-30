@@ -3,7 +3,11 @@ const ejs = require("ejs");
 const { read } = require("fs");
 const app = express();
 const  _readPlayers = require("./players.js");
-const addPlayersinView = require("./render")
+const renderModule = require("./render");
+const savePlayerModule = require("./save");
+const loadPlayerModule = require("./load");
+
+var myParser = require("body-parser");
 
 
 app.listen(3001, () => {
@@ -13,31 +17,54 @@ app.listen(3001, () => {
 // serve your css as static
 app.set("view engine", "ejs");
 app.use(express.static(__dirname));
+app.use(myParser.urlencoded({extended : false}));
 
 app.get("/", (req, res) => {
   res.render(__dirname + "/views/main.ejs");
 });
 
-app.get("/READ", async (req, res) => {
+app.get("/NEW", async (req, res) => {
+  //read players
   var players = await _readPlayers();
+  //add in the page
+  var out = await renderModule.addPlayersinView(players, false);
+  //reset cuurent position
+  savePlayerModule.clearPosition();
 
-  var out = addPlayersinView(players);
-
-  //res.render(out);
   res.send(out);
-
   res.status(200)
 })
 
+app.get("/moveplayer", (req, res) => {
 
-app.post('/READ', async (req, res)  => {
-    //readP()
-    var players = await _readPlayers();
+  savePlayerModule.savePlayerPosition(req.query)
+  res.status(200)
+  res.sendStatus(200);
+})
 
-    var out = addPlayersinView(players);
+app.get("/SAVE", (req, res) => {
 
-    res.send(out);
+  var fileName = req.query
+  savePlayerModule.saveTeam(fileName);
 
-    res.status(200)
-  });
+  //res.send()
+  res.status(200)
+  res.sendStatus(200);
+})
 
+app.get("/LOAD", async (req, res) => {
+  
+  var fileName = req.query
+ 
+  //read players
+  var players = await _readPlayers();
+
+  //reset current position & read team
+  await loadPlayerModule.readPosition(fileName) 
+
+  //add in the page
+  var out = await renderModule.addPlayersinView(players, true);
+ 
+  res.send(out);
+  res.status(200)
+})
