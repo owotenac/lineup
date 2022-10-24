@@ -108,8 +108,19 @@
             },
             {
                 "Name":"Lucas C",
-                "Position": "Attaque",
+                "Position": "Defense",
                 "id": "a3f385ba-3e41-11ed-875e-8babb272a54c"
+            },
+            {
+                "Name":"Wael",
+                "Position": "Defense",
+                "id": "a3f385ba-3e41-11ed-875e-8babb247a53b"
+            },
+            {
+                "Name":"Mensour",
+                "Position": "Milieu",
+                "id": "a3f385ba-3e41-11ed-875e-8babb697aa3b"
             }
+
         ]
 }

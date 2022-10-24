@@ -23,6 +23,8 @@ app.get("/", (req, res) => {
   res.render(__dirname + "/views/main.ejs");
 });
 
+
+
 app.get("/NEW", async (req, res) => {
   //read players
   var players = await _readPlayers();
@@ -34,6 +36,16 @@ app.get("/NEW", async (req, res) => {
   res.send(out);
   res.status(200)
 })
+
+app.get("/loadteam", async (req, res) => {
+  //read players
+  var players = await _readPlayers();
+  console.log("/loadteam")
+  res.send(players);
+  res.status(200)
+ // res.sendStatus(200);
+})
+
 
 app.get("/moveplayer", (req, res) => {
 
