@@ -127,3 +127,36 @@ function loadComposition()
   xhr.open("GET", "/LOAD?" + request);
   xhr.send();
 }
+
+
+function capture() {
+
+  //let canvas = document.getElementById('canvas');
+  let screenshotTarget = document.body;
+
+  //let ctx = canvas.getContext('2d');
+  //canvas.width = 1300;
+  //canvas.height = 850;
+
+  // Convert our canvas to a data URL
+  //let canvasUrl = canvas.toDataURL("image/jpeg", 0.5);
+ 
+  
+  html2canvas(screenshotTarget).then((canvas) => {
+      const base64image = canvas.toDataURL("image/jpeg");
+      //window.location.href = base64image;
+      //console.log(base64image)
+ // Create an anchor, and set the href value to our data URL
+  const createEl = document.createElement('a');
+  createEl.href = base64image;
+
+  // This is the name of our downloaded file
+  createEl.download = "download-this-canvas";
+
+  // Click the download button, causing a download, and then remove it
+  createEl.click();
+  createEl.remove();
+
+  });
+  
+}
