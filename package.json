@@ -2,7 +2,8 @@
   "name": "lineup",
   "version": "0.1",
   "scripts": {
-    "start": "nodemon -e js,ejs"
+    "build": "node install",
+    "start": "server2"
   },
   "dependencies": {
     "ejs": "^3.1.8",
