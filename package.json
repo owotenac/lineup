@@ -1,8 +1,8 @@
 {
   "name": "lineup",
   "version": "0.1",
+  "main": "server2.js",
   "scripts": {
-    "build": "node install",
     "start": "node ./server2.js"
   },
   "dependencies": {
