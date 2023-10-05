@@ -9,7 +9,6 @@ body {
   background-color: #345;
   color: #eee;
   font-family: 'Lato', sans-serif;
-  font-size: 62.5%;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -70,6 +69,8 @@ code {
   top: 0;
   left: 0;
   right: 0;
+  font-size: 62.5%;
+
 }
 .links {
   display: grid;

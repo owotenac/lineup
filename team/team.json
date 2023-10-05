@@ -1,30 +1,19 @@
 { 
     "Players":[
             {
-                "Name":"Evan",
+                "Name":"Lucas",
                 "Position": "Gardien",
                 "id": "a3f3825e-3e41-11ed-8749-735b193940b6"
             },
             {
-                "Name":"Lucas",
-                "Position": "Gardien",
-                "id": "a3f38358-3e41-11ed-874a-9f5b3b6eb203"
-            },
-            {
-                "Name":"Leandre",
-                "Position": "Defense",
-                "id": "a3f38380-3e41-11ed-874b-07f32dfe5143"
-
-            },
-            {
-                "Name":"Victor 1",
-                "Position": "Defense",
-                "id": "a3f3839e-3e41-11ed-874c-3f685b1136e7"
-            },
-            {
-                "Name":"Victor 2",
+                "Name":"Mael",
                 "Position": "Defense",
                 "id": "a3f383bc-3e41-11ed-874d-835cad919708"
+            },
+            {
+                "Name":"Pablo",
+                "Position": "Defense",
+                "id": "a3f383bc-3e41-11ed-874d-835ded919742"
             },
             {
                 "Name":"Ilan",
@@ -37,89 +26,64 @@
                 "id": "a3f383f8-3e41-11ed-874f-072462182a6f"
             },
             {
-                "Name":"Alexis",
+                "Name":"Tymeo",
+                "Position": "Defense",
+                "id": "a3f383f8-3e41-11ed-874f-072462182fbe"
+            },
+            {
+                "Name":"Momo",
                 "Position": "Defense",
                 "id": "a3f38416-3e41-11ed-8750-0f8aa102ba5d"
             },
             {
-                "Name":"Rayan 1",
-                "Position": "Milieu",
+                "Name":"Anatole",
+                "Position": "Defense",
+                "id": "a3f38254-3e41-17ed-8750-0f8aa10257ae"
+            },
+            {
+                "Name":"Rayan",
+                "Position": "Defense",
                 "id": "a3f38434-3e41-11ed-8751-a7afc9ea22e6"
             },
             {
-                "Name":"Ethan",
+                "Name":"Ethan B",
                 "Position": "Milieu",
                 "id": "a3f38452-3e41-11ed-8752-e75c04884629"
             },
             {
-                "Name":"Noham",
+                "Name":"Noham C",
                 "Position": "Milieu",
                 "id": "a3f38470-3e41-11ed-8753-13e5898a96d5"
             },
             {
-                "Name":"Imad",
-                "Position": "Milieu",
+                "Name":"Noham B",
+                "Position": "Attaque",
                 "id": "a3f3848e-3e41-11ed-8754-6bf33935d807"
             },
             {
-                "Name":"Ylan",
-                "Position": "Defense",
+                "Name":"Ethan L",
+                "Position": "Milieu",
                 "id": "a3f384ac-3e41-11ed-8755-e3eaf4d284aa"
             },
             {
-                "Name":"Justin",
+                "Name":"Lorenzo",
                 "Position": "Milieu",
                 "id": "a3f384ca-3e41-11ed-8756-c7d3ec75b0b5"
             },
             {
-                "Name":"Kenzo",
+                "Name":"Sami",
                 "Position": "Milieu",
-                "id": "a3f384e8-3e41-11ed-8757-d75dfbf002b0"
-            },
-            {
-                "Name":"Camil",
-                "Position": "Milieu",
-                "id": "a3f38506-3e41-11ed-8758-2bcee541ec42"
-            },
-            {
-                "Name":"Giani",
-                "Position": "Attaque",
-                "id": "a3f38524-3e41-11ed-8759-1f3a17d26205"
-            },
-            {
-                "Name":"Rayan 2",
-                "Position": "Attaque",
-                "id": "a3f38542-3e41-11ed-875a-cbfe4d8b9de7"
-            },
-            {
-                "Name":"Yassine",
-                "Position": "Attaque",
-                "id": "a3f38560-3e41-11ed-875b-7f7644663b7c"
-            },
-            {
-                "Name":"Dorian",
-                "Position": "Attaque",
-                "id": "a3f3857e-3e41-11ed-875c-2307d5e2ca39"
-            },
-            {
-                "Name":"Lucas C",
-                "Position": "Defense",
-                "id": "a3f385ba-3e41-11ed-875e-8babb272a54c"
+                "id": "a3f375ca-5241-11ed-8756-77d3ec75b05b"
             },
             {
                 "Name":"Wael",
-                "Position": "Defense",
-                "id": ",a3f385ba-3e41-11ed-875e-8babb247a53b"
-            },
-            {
-                "Name":"Ismael",
                 "Position": "Milieu",
-                "id": ",a3f385ba-3e41-11ed-875e-8babbe77a74e"
+                "id": "a3f316ca-3e41-11ed-8777-c7d3ec14b0ac"
             },
             {
-                "Name":"Nolan",
+                "Name":"Samuel",
                 "Position": "Attaque",
-                "id": ",a3f385ba-3e41-11ed-875e-8babbe7237ef"
+                "id": "a3f38524-3e41-11ed-8759-1f3a17d26205"
             }
 
 
