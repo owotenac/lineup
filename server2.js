@@ -1,6 +1,6 @@
 const express = require("express");
 const ejs = require("ejs");
-const { read } = require("fs");
+//const { read } = require("fs");
 const app = express();
 const  _readPlayers = require("./players.js");
 const renderModule = require("./render");
