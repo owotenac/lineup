@@ -67,7 +67,7 @@
             },
             {
                 "Name":"Lorenzo",
-                "Position": "Milieu",
+                "Position": "Defense",
                 "id": "a3f384ca-3e41-11ed-8756-c7d3ec75b0b5"
             },
             {
@@ -84,6 +84,16 @@
                 "Name":"Samuel",
                 "Position": "Attaque",
                 "id": "a3f38524-3e41-11ed-8759-1f3a17d26205"
+            },
+            {
+                "Name":"Warren",
+                "Position": "Attaque",
+                "id": "a3f38524-3e41-21ed-7759-1f3269d2625f"
+            },
+            {
+                "Name":"Marrawne",
+                "Position": "Attaque",
+                "id": "a3f38744-3ed1-11ed-8ab9-1f3a19e26217"
             }
 
 
