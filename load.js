@@ -1,7 +1,7 @@
 const utils  = require("./utils")
 const savePlayerModule = require("./save")
 var fs = require("fs")
-//const readdir = require('node:fs/promises')
+const readdir = require('node:fs/promises')
 //import { readdir } from 'node:fs/promises';
 
 async function _readTeam(file) {
