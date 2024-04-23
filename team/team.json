@@ -56,14 +56,9 @@
                 "id": "a3f38470-3e41-11ed-8753-13e5898a96d5"
             },
             {
-                "Name":"Noham B",
+                "Name":"Noam B",
                 "Position": "Attaque",
                 "id": "a3f3848e-3e41-11ed-8754-6bf33935d807"
-            },
-            {
-                "Name":"Ethan L",
-                "Position": "Milieu",
-                "id": "a3f384ac-3e41-11ed-8755-e3eaf4d284aa"
             },
             {
                 "Name":"Lorenzo",
@@ -79,6 +74,16 @@
                 "Name":"Wael",
                 "Position": "Milieu",
                 "id": "a3f316ca-3e41-11ed-8777-c7d3ec14b0ac"
+            },
+            {
+                "Name":"Adam",
+                "Position": "Milieu",
+                "id": "a3f486ca-4a41-11ed-3e41-c8b3ec14b09c"
+            },
+            {
+                "Name":"Baptiste",
+                "Position": "Attaque",
+                "id": "a3f176ca-3b41-17ed-8797-57d3ec14bf7a"
             },
             {
                 "Name":"Samuel",
